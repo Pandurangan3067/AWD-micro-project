@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechHire | Interactive Job Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>TechHire</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search by job title...">
+                <select id="companyFilter">
+                    <option value="all">All Companies</option>
+                </select>
+                <select id="roleFilter">
+                    <option value="all">All Roles</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-layout">
+        <section class="job-feed">
+            <h2>Available Jobs</h2>
+            <div id="jobGrid" class="job-grid"></div>
+        </section>
+
+        <aside class="saved-jobs">
+            <h2>Saved Jobs (<span id="savedCount">0</span>)</h2>
+            <div id="savedList"></div>
+        </aside>
+    </main>
+
+    <script src="dist/app.js" defer></script>
+</body>
+</html>
